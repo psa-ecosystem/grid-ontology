@@ -1,0 +1,14 @@
+enumerations:
+- id: power.equipment.transformer.OperationStatus
+  name: OperationStatus
+  package_id: power.equipment.transformer
+  values:
+  - value: Running
+    label: Running
+  - value: OutOfService
+    label: OutOfService
+  - value: Maintenance
+    label: Maintenance
+  - value: Retired
+    label: Retired
+  description: Lifecycle operational state of a power transformer.

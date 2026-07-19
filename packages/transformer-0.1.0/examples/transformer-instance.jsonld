@@ -1,0 +1,31 @@
+{
+  "@context": "https://grid-ontology.org/psa/v0.2/transformer/context",
+  "@graph": [
+    {
+      "@type": "PowerTransformer",
+      "id": "PowerTransformer001",
+      "ratedCapacity": 1.0,
+      "voltageLevel": 1.0,
+      "phaseCount": 1,
+      "manufacturer": "manufacturer",
+      "operationStatus": "operationStatus",
+      "hasTransformerEnd": [
+        "TransformerEnd001"
+      ]
+    },
+    {
+      "@type": "TransformerEnd",
+      "id": "TransformerEnd001",
+      "endNumber": 1,
+      "ratedVoltage": 1.0,
+      "grounded": true,
+      "terminal": "Terminal001"
+    },
+    {
+      "@type": "Terminal",
+      "id": "Terminal001",
+      "terminalId": "terminalId",
+      "sequenceNumber": 1
+    }
+  ]
+}

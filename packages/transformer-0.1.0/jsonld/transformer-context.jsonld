@@ -1,0 +1,69 @@
+{
+  "@context": {
+    "@vocab": "https://grid-ontology.org/psa/v0.2/transformer/",
+    "id": "@id",
+    "type": "@type",
+    "PowerTransformer": {
+      "@id": "https://grid-ontology.org/psa/v0.2/transformer/PowerTransformer",
+      "@type": "@id"
+    },
+    "ratedCapacity": {
+      "@id": "https://grid-ontology.org/psa/v0.2/transformer/PowerTransformer.ratedCapacity"
+    },
+    "voltageLevel": {
+      "@id": "https://grid-ontology.org/psa/v0.2/transformer/PowerTransformer.voltageLevel"
+    },
+    "phaseCount": {
+      "@id": "https://grid-ontology.org/psa/v0.2/transformer/PowerTransformer.phaseCount"
+    },
+    "manufacturer": {
+      "@id": "https://grid-ontology.org/psa/v0.2/transformer/PowerTransformer.manufacturer"
+    },
+    "operationStatus": {
+      "@id": "https://grid-ontology.org/psa/v0.2/transformer/PowerTransformer.operationStatus"
+    },
+    "installedIn": {
+      "@id": "https://grid-ontology.org/psa/v0.2/transformer/PowerTransformer.installedIn",
+      "@type": "@id"
+    },
+    "hasTransformerEnd": {
+      "@id": "https://grid-ontology.org/psa/v0.2/transformer/PowerTransformer.hasTransformerEnd",
+      "@type": "@id"
+    },
+    "TransformerEnd": {
+      "@id": "https://grid-ontology.org/psa/v0.2/transformer/TransformerEnd",
+      "@type": "@id"
+    },
+    "endNumber": {
+      "@id": "https://grid-ontology.org/psa/v0.2/transformer/TransformerEnd.endNumber"
+    },
+    "ratedVoltage": {
+      "@id": "https://grid-ontology.org/psa/v0.2/transformer/TransformerEnd.ratedVoltage"
+    },
+    "grounded": {
+      "@id": "https://grid-ontology.org/psa/v0.2/transformer/TransformerEnd.grounded"
+    },
+    "terminal": {
+      "@id": "https://grid-ontology.org/psa/v0.2/transformer/TransformerEnd.terminal",
+      "@type": "@id"
+    },
+    "Terminal": {
+      "@id": "https://grid-ontology.org/psa/v0.2/transformer/Terminal",
+      "@type": "@id"
+    },
+    "terminalId": {
+      "@id": "https://grid-ontology.org/psa/v0.2/transformer/Terminal.terminalId"
+    },
+    "sequenceNumber": {
+      "@id": "https://grid-ontology.org/psa/v0.2/transformer/Terminal.sequenceNumber"
+    },
+    "connectedTo": {
+      "@id": "https://grid-ontology.org/psa/v0.2/transformer/Terminal.connectedTo",
+      "@type": "@id"
+    },
+    "OperationStatus": {
+      "@id": "https://grid-ontology.org/psa/v0.2/transformer/OperationStatus",
+      "@type": "@id"
+    }
+  }
+}

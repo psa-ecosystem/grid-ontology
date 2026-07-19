@@ -1,0 +1,92 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix psa: <https://grid-ontology.org/psa/v0.2/transformer/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://grid-ontology.org/psa/v0.2/transformer> a owl:Ontology ;
+    rdfs:label "TransformerPackage"@en ;
+    owl:versionInfo "0.1.0" .
+
+psa:PowerTransformer.hasTransformerEnd a owl:ObjectProperty ;
+    rdfs:label "hasTransformerEnd"@en ;
+    rdfs:domain psa:PowerTransformer ;
+    rdfs:range psa:TransformerEnd .
+
+psa:PowerTransformer.installedIn a owl:ObjectProperty ;
+    rdfs:label "installedIn"@en ;
+    rdfs:domain psa:PowerTransformer ;
+    rdfs:range <https://grid-ontology.org/psa/v0.2/core/Location> .
+
+psa:PowerTransformer.manufacturer a owl:DatatypeProperty ;
+    rdfs:label "manufacturer"@en ;
+    rdfs:domain psa:PowerTransformer ;
+    rdfs:range xsd:string .
+
+psa:PowerTransformer.operationStatus a owl:DatatypeProperty ;
+    rdfs:label "operationStatus"@en ;
+    rdfs:domain psa:PowerTransformer ;
+    rdfs:range xsd:string .
+
+psa:PowerTransformer.phaseCount a owl:DatatypeProperty ;
+    rdfs:label "phaseCount"@en ;
+    rdfs:domain psa:PowerTransformer ;
+    rdfs:range xsd:integer .
+
+psa:PowerTransformer.ratedCapacity a owl:DatatypeProperty ;
+    rdfs:label "ratedCapacity"@en ;
+    rdfs:domain psa:PowerTransformer ;
+    rdfs:range xsd:double .
+
+psa:PowerTransformer.voltageLevel a owl:DatatypeProperty ;
+    rdfs:label "voltageLevel"@en ;
+    rdfs:domain psa:PowerTransformer ;
+    rdfs:range xsd:double .
+
+psa:Terminal.connectedTo a owl:ObjectProperty ;
+    rdfs:label "connectedTo"@en ;
+    rdfs:domain psa:Terminal ;
+    rdfs:range psa:Terminal .
+
+psa:Terminal.sequenceNumber a owl:DatatypeProperty ;
+    rdfs:label "sequenceNumber"@en ;
+    rdfs:domain psa:Terminal ;
+    rdfs:range xsd:integer .
+
+psa:Terminal.terminalId a owl:DatatypeProperty ;
+    rdfs:label "terminalId"@en ;
+    rdfs:domain psa:Terminal ;
+    rdfs:range xsd:string .
+
+psa:TransformerEnd.endNumber a owl:DatatypeProperty ;
+    rdfs:label "endNumber"@en ;
+    rdfs:domain psa:TransformerEnd ;
+    rdfs:range xsd:integer .
+
+psa:TransformerEnd.grounded a owl:DatatypeProperty ;
+    rdfs:label "grounded"@en ;
+    rdfs:domain psa:TransformerEnd ;
+    rdfs:range xsd:boolean .
+
+psa:TransformerEnd.ratedVoltage a owl:DatatypeProperty ;
+    rdfs:label "ratedVoltage"@en ;
+    rdfs:domain psa:TransformerEnd ;
+    rdfs:range xsd:double .
+
+psa:TransformerEnd.terminal a owl:ObjectProperty ;
+    rdfs:label "terminal"@en ;
+    rdfs:domain psa:TransformerEnd ;
+    rdfs:range psa:Terminal .
+
+psa:Terminal a owl:Class ;
+    rdfs:label "Terminal"@en ;
+    rdfs:comment "A connection point for equipment in the grid."@zh .
+
+psa:TransformerEnd a owl:Class ;
+    rdfs:label "TransformerEnd"@en ;
+    rdfs:comment "A terminal point of a power transformer winding."@zh .
+
+psa:PowerTransformer a owl:Class ;
+    rdfs:label "PowerTransformer"@en ;
+    rdfs:comment "A transformer in the power grid, specialized from Equipment."@zh ;
+    rdfs:subClassOf <https://grid-ontology.org/psa/v0.2/equipment/Transformer> .
+

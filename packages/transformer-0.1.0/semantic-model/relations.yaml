@@ -1,0 +1,53 @@
+relations:
+- id: power.equipment.transformer.installedIn
+  name: installedIn
+  display_name: installedIn
+  primitive: Relation
+  source:
+    entity_id: power.equipment.transformer.PowerTransformer
+    iri: https://grid-ontology.org/psa/v0.2/transformer/PowerTransformer
+  target:
+    entity_id: power.grid.core.Location
+    iri: https://grid-ontology.org/psa/v0.2/core/Location
+  multiplicity: 0..1
+  inverse_name: null
+  description: null
+- id: power.equipment.transformer.hasTransformerEnd
+  name: hasTransformerEnd
+  display_name: hasTransformerEnd
+  primitive: Relation
+  source:
+    entity_id: power.equipment.transformer.PowerTransformer
+    iri: https://grid-ontology.org/psa/v0.2/transformer/PowerTransformer
+  target:
+    entity_id: power.equipment.transformer.TransformerEnd
+    iri: https://grid-ontology.org/psa/v0.2/transformer/TransformerEnd
+  multiplicity: 1..*
+  inverse_name: null
+  description: null
+- id: power.equipment.transformer.terminal
+  name: terminal
+  display_name: terminal
+  primitive: Relation
+  source:
+    entity_id: power.equipment.transformer.TransformerEnd
+    iri: https://grid-ontology.org/psa/v0.2/transformer/TransformerEnd
+  target:
+    entity_id: power.equipment.transformer.Terminal
+    iri: https://grid-ontology.org/psa/v0.2/transformer/Terminal
+  multiplicity: 0..1
+  inverse_name: null
+  description: null
+- id: power.equipment.transformer.connectedTo
+  name: connectedTo
+  display_name: connectedTo
+  primitive: Relation
+  source:
+    entity_id: power.equipment.transformer.Terminal
+    iri: https://grid-ontology.org/psa/v0.2/transformer/Terminal
+  target:
+    entity_id: power.equipment.transformer.Terminal
+    iri: https://grid-ontology.org/psa/v0.2/transformer/Terminal
+  multiplicity: 0..*
+  inverse_name: null
+  description: Electrical connectivity to another terminal.

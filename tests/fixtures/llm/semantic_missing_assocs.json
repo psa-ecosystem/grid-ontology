@@ -1,0 +1,9 @@
+{
+  "class_iri": "http://iec.ch/TC57/2024/CIM-schema-cim17#Baz",
+  "consistent": false,
+  "missing_attrs": {},
+  "missing_assocs": {"JSON-LD": ["Terminal"], "JSON Schema": ["Terminal"]},
+  "multiplicity_mismatch": ["OWL:Terminal 0..* vs SHACL 1..*"],
+  "notes": "JSON-LD 与 JSON Schema 缺 Terminal 关联；多重性 OWL 0..* 与 SHACL 1..* 不一致",
+  "confidence": 0.82
+}

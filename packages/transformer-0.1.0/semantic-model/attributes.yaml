@@ -1,0 +1,141 @@
+attributes:
+- id: power.equipment.transformer.ratedCapacity
+  name: ratedCapacity
+  display_name: ratedCapacity
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.transformer.PowerTransformer
+    iri: https://grid-ontology.org/psa/v0.2/transformer/PowerTransformer
+  range:
+    type: Decimal
+    xsd: xsd:double
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: Rated apparent power in MVA.
+- id: power.equipment.transformer.voltageLevel
+  name: voltageLevel
+  display_name: voltageLevel
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.transformer.PowerTransformer
+    iri: https://grid-ontology.org/psa/v0.2/transformer/PowerTransformer
+  range:
+    type: Decimal
+    xsd: xsd:double
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: Nominal voltage level in kV.
+- id: power.equipment.transformer.phaseCount
+  name: phaseCount
+  display_name: phaseCount
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.transformer.PowerTransformer
+    iri: https://grid-ontology.org/psa/v0.2/transformer/PowerTransformer
+  range:
+    type: Integer
+    xsd: xsd:integer
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: Number of phases (e.g., 1 or 3).
+- id: power.equipment.transformer.manufacturer
+  name: manufacturer
+  display_name: manufacturer
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.transformer.PowerTransformer
+    iri: https://grid-ontology.org/psa/v0.2/transformer/PowerTransformer
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: null
+- id: power.equipment.transformer.operationStatus
+  name: operationStatus
+  display_name: operationStatus
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.transformer.PowerTransformer
+    iri: https://grid-ontology.org/psa/v0.2/transformer/PowerTransformer
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: 'Operational state: Running, OutOfService, Maintenance, Retired.'
+- id: power.equipment.transformer.endNumber
+  name: endNumber
+  display_name: endNumber
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.transformer.TransformerEnd
+    iri: https://grid-ontology.org/psa/v0.2/transformer/TransformerEnd
+  range:
+    type: Integer
+    xsd: xsd:integer
+    unit: null
+  required: true
+  multiplicity: 0..1
+  description: null
+- id: power.equipment.transformer.ratedVoltage
+  name: ratedVoltage
+  display_name: ratedVoltage
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.transformer.TransformerEnd
+    iri: https://grid-ontology.org/psa/v0.2/transformer/TransformerEnd
+  range:
+    type: Decimal
+    xsd: xsd:double
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: null
+- id: power.equipment.transformer.grounded
+  name: grounded
+  display_name: grounded
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.transformer.TransformerEnd
+    iri: https://grid-ontology.org/psa/v0.2/transformer/TransformerEnd
+  range:
+    type: Boolean
+    xsd: xsd:boolean
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: null
+- id: power.equipment.transformer.terminalId
+  name: terminalId
+  display_name: terminalId
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.transformer.Terminal
+    iri: https://grid-ontology.org/psa/v0.2/transformer/Terminal
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: true
+  multiplicity: 0..1
+  description: null
+- id: power.equipment.transformer.sequenceNumber
+  name: sequenceNumber
+  display_name: sequenceNumber
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.transformer.Terminal
+    iri: https://grid-ontology.org/psa/v0.2/transformer/Terminal
+  range:
+    type: Integer
+    xsd: xsd:integer
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: null

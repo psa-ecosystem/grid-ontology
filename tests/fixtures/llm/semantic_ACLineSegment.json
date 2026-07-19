@@ -1,0 +1,9 @@
+{
+  "class_iri": "http://iec.ch/TC57/2024/CIM-schema-cim17#ACLineSegment",
+  "consistent": true,
+  "missing_attrs": {},
+  "missing_assocs": {},
+  "multiplicity_mismatch": [],
+  "notes": "5 adapter 一致；ACLineSegment 包含 length / r / x / gch / gch 所有核心属性",
+  "confidence": 0.96
+}

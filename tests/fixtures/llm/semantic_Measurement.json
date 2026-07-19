@@ -1,0 +1,9 @@
+{
+  "class_iri": "http://iec.ch/TC57/2024/CIM-schema-cim17#Measurement",
+  "consistent": true,
+  "missing_attrs": {},
+  "missing_assocs": {},
+  "multiplicity_mismatch": [],
+  "notes": "5 adapter 一致；Measurement 包含 measurementType / units / PSR/Asset 等核心字段",
+  "confidence": 0.94
+}

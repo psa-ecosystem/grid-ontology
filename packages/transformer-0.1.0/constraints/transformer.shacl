@@ -1,0 +1,105 @@
+@prefix psa: <https://grid-ontology.org/psa/v0.2/transformer/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+psa:PowerTransformerShape a sh:NodeShape ;
+    rdfs:label "PowerTransformer shape"@en ;
+    sh:property psa:PowerTransformer.hasTransformerEndShape,
+        psa:PowerTransformer.installedInShape,
+        psa:PowerTransformer.manufacturerShape,
+        psa:PowerTransformer.operationStatusShape,
+        psa:PowerTransformer.phaseCountShape,
+        psa:PowerTransformer.ratedCapacityShape,
+        psa:PowerTransformer.voltageLevelShape ;
+    sh:targetClass psa:PowerTransformer .
+
+psa:TerminalShape a sh:NodeShape ;
+    rdfs:label "Terminal shape"@en ;
+    sh:property psa:Terminal.connectedToShape,
+        psa:Terminal.sequenceNumberShape,
+        psa:Terminal.terminalIdShape ;
+    sh:targetClass psa:Terminal .
+
+psa:TransformerEndShape a sh:NodeShape ;
+    rdfs:label "TransformerEnd shape"@en ;
+    sh:property psa:TransformerEnd.endNumberShape,
+        psa:TransformerEnd.groundedShape,
+        psa:TransformerEnd.ratedVoltageShape,
+        psa:TransformerEnd.terminalShape ;
+    sh:targetClass psa:TransformerEnd .
+
+psa:PowerTransformer.hasTransformerEndShape a sh:PropertyShape ;
+    sh:class_ psa:TransformerEnd ;
+    sh:minCount 1 ;
+    sh:path psa:PowerTransformer.hasTransformerEnd .
+
+psa:PowerTransformer.installedInShape a sh:PropertyShape ;
+    sh:class_ <https://grid-ontology.org/psa/v0.2/core/Location> ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:path psa:PowerTransformer.installedIn .
+
+psa:PowerTransformer.manufacturerShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path psa:PowerTransformer.manufacturer .
+
+psa:PowerTransformer.operationStatusShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path psa:PowerTransformer.operationStatus .
+
+psa:PowerTransformer.phaseCountShape a sh:PropertyShape ;
+    sh:datatype xsd:integer ;
+    sh:maxCount 1 ;
+    sh:path psa:PowerTransformer.phaseCount .
+
+psa:PowerTransformer.ratedCapacityShape a sh:PropertyShape ;
+    sh:datatype xsd:double ;
+    sh:maxCount 1 ;
+    sh:path psa:PowerTransformer.ratedCapacity .
+
+psa:PowerTransformer.voltageLevelShape a sh:PropertyShape ;
+    sh:datatype xsd:double ;
+    sh:maxCount 1 ;
+    sh:path psa:PowerTransformer.voltageLevel .
+
+psa:Terminal.connectedToShape a sh:PropertyShape ;
+    sh:class_ psa:Terminal ;
+    sh:minCount 0 ;
+    sh:path psa:Terminal.connectedTo .
+
+psa:Terminal.sequenceNumberShape a sh:PropertyShape ;
+    sh:datatype xsd:integer ;
+    sh:maxCount 1 ;
+    sh:path psa:Terminal.sequenceNumber .
+
+psa:Terminal.terminalIdShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path psa:Terminal.terminalId .
+
+psa:TransformerEnd.endNumberShape a sh:PropertyShape ;
+    sh:datatype xsd:integer ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path psa:TransformerEnd.endNumber .
+
+psa:TransformerEnd.groundedShape a sh:PropertyShape ;
+    sh:datatype xsd:boolean ;
+    sh:maxCount 1 ;
+    sh:path psa:TransformerEnd.grounded .
+
+psa:TransformerEnd.ratedVoltageShape a sh:PropertyShape ;
+    sh:datatype xsd:double ;
+    sh:maxCount 1 ;
+    sh:path psa:TransformerEnd.ratedVoltage .
+
+psa:TransformerEnd.terminalShape a sh:PropertyShape ;
+    sh:class_ psa:Terminal ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:path psa:TransformerEnd.terminal .
+

@@ -1,0 +1,14 @@
+{
+  "class_iri": "http://iec.ch/TC57/2024/CIM-schema-cim17#Breaker",
+  "consistent": false,
+  "missing_attrs": {
+    "Python Types": ["ratedVoltage", "ratedCurrent"],
+    "JSON-LD": ["recloseTime"]
+  },
+  "missing_assocs": {
+    "JSON Schema": ["ProtectedSwitch"]
+  },
+  "multiplicity_mismatch": [],
+  "notes": "Python Types 与 JSON-LD 缺少 ratedVoltage/ratedCurrent/recloseTime 关键属性（语义上 Breaker 必备）；JSON Schema 缺少到 ProtectedSwitch 的关联",
+  "confidence": 0.91
+}

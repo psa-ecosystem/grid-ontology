@@ -1,0 +1,9 @@
+{
+  "class_iri": "http://iec.ch/TC57/2024/CIM-schema-cim17#Bar",
+  "consistent": false,
+  "missing_attrs": {"Python Types": ["voltage"], "JSON-LD": ["voltage"]},
+  "missing_assocs": {},
+  "multiplicity_mismatch": [],
+  "notes": "Python Types 与 JSON-LD 缺 voltage 属性",
+  "confidence": 0.88
+}

@@ -1,0 +1,133 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://grid-ontology.org/psa/v0.2/transformer/schema",
+  "title": "TransformerPackage",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "@graph": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/PowerTransformer"
+          },
+          {
+            "$ref": "#/$defs/TransformerEnd"
+          },
+          {
+            "$ref": "#/$defs/Terminal"
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "@graph"
+  ],
+  "$defs": {
+    "PowerTransformer": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "const": "PowerTransformer"
+        },
+        "id": {
+          "type": "string"
+        },
+        "ratedCapacity": {
+          "type": "number"
+        },
+        "voltageLevel": {
+          "type": "number"
+        },
+        "phaseCount": {
+          "type": "integer"
+        },
+        "manufacturer": {
+          "type": "string"
+        },
+        "operationStatus": {
+          "type": "string"
+        },
+        "installedIn": {
+          "type": "string"
+        },
+        "hasTransformerEnd": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "@type",
+        "id"
+      ],
+      "additionalProperties": false
+    },
+    "TransformerEnd": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "const": "TransformerEnd"
+        },
+        "id": {
+          "type": "string"
+        },
+        "endNumber": {
+          "type": "integer"
+        },
+        "ratedVoltage": {
+          "type": "number"
+        },
+        "grounded": {
+          "type": "boolean"
+        },
+        "terminal": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "@type",
+        "id",
+        "endNumber"
+      ],
+      "additionalProperties": false
+    },
+    "Terminal": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "const": "Terminal"
+        },
+        "id": {
+          "type": "string"
+        },
+        "terminalId": {
+          "type": "string"
+        },
+        "sequenceNumber": {
+          "type": "integer"
+        },
+        "connectedTo": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "@type",
+        "id",
+        "terminalId"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

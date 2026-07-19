@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
+*.egg-info/
+dist/
+build/
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~
+
+# Project artifacts
+.cache/
+.local/
+*.log
+*.tmp
+
+# Historical build outputs (pre-PSA artifacts, not part of current release)
+build_taiqu*/
+
+# Source PDF / intermediate extraction dumps (keep only cim-base-full.md)
+docs/GBT43259301—2024/GB-T*/
+docs/GBT43259301—2024/*pdf*/
+docs/GBT43259301—2024/*.json
+docs/GBT43259301—2024/*/*_content_list*.json
+docs/GBT43259301—2024/*/*_model.json
+docs/GBT43259301—2024/*/images/
+docs/GBT43259301—2024/*/full.md
+
+# Test outputs
+.pytest_junit.xml
+.coverage.json
+
+# Secrets / env
+.env
+.env.local
+*.pem
+*.key
+
+# LLM E2E results（运行时产物，含 API 元数据，不入库）
+docs/deepseek_e2e_results.json

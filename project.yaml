@@ -1,0 +1,17 @@
+project:
+  id: grid-ontology
+  name: Grid Ontology
+  category: semantic-producer
+  psa_role: Semantic Model Producer
+  description: >
+    Build power-grid semantic models and semantic packages.
+  maturity:
+    psa_level: 2
+  status: active
+  dependencies:
+    - psa-specifications
+  provides:
+    - semantic-model
+    - semantic-package
+  consumes:
+    - psa-core-semantic-model

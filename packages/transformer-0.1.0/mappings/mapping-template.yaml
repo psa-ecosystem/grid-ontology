@@ -1,0 +1,51 @@
+mapping_anchors:
+- semantic_id: power.equipment.transformer.ratedCapacity
+  expected_mappings:
+  - system: PMS
+    object: PowerTransformer
+    field: ''
+- semantic_id: power.equipment.transformer.voltageLevel
+  expected_mappings:
+  - system: PMS
+    object: PowerTransformer
+    field: ''
+- semantic_id: power.equipment.transformer.phaseCount
+  expected_mappings:
+  - system: PMS
+    object: PowerTransformer
+    field: ''
+- semantic_id: power.equipment.transformer.manufacturer
+  expected_mappings:
+  - system: PMS
+    object: PowerTransformer
+    field: ''
+- semantic_id: power.equipment.transformer.operationStatus
+  expected_mappings:
+  - system: PMS
+    object: PowerTransformer
+    field: ''
+- semantic_id: power.equipment.transformer.endNumber
+  expected_mappings:
+  - system: PMS
+    object: TransformerEnd
+    field: ''
+- semantic_id: power.equipment.transformer.ratedVoltage
+  expected_mappings:
+  - system: PMS
+    object: TransformerEnd
+    field: ''
+- semantic_id: power.equipment.transformer.grounded
+  expected_mappings:
+  - system: PMS
+    object: TransformerEnd
+    field: ''
+- semantic_id: power.equipment.transformer.terminalId
+  expected_mappings:
+  - system: PMS
+    object: Terminal
+    field: ''
+- semantic_id: power.equipment.transformer.sequenceNumber
+  expected_mappings:
+  - system: PMS
+    object: Terminal
+    field: ''

@@ -1,0 +1,9 @@
+{
+  "class_iri": "http://iec.ch/TC57/2024/CIM-schema-cim17#Terminal",
+  "consistent": false,
+  "missing_attrs": {},
+  "missing_assocs": {},
+  "multiplicity_mismatch": ["OWL=0..* vs JSON Schema=1..1 (ConductingEquipment)", "SHACL=0..1 vs Python Types=1..* (ConnectivityNode)"],
+  "notes": "Terminal 与 ConductingEquipment 的多重性 OWL/SHACL/Python Types 之间存在差异，与 CIM 16 标准描述的多重性不一致",
+  "confidence": 0.88
+}

@@ -1,0 +1,33 @@
+entities:
+- id: power.equipment.transformer.PowerTransformer
+  name: PowerTransformer
+  display_name: PowerTransformer
+  primitive: Entity
+  namespace: https://grid-ontology.org/psa/v0.2/transformer/
+  iri: https://grid-ontology.org/psa/v0.2/transformer/PowerTransformer
+  description: A transformer in the power grid, specialized from Equipment.
+  parents:
+  - iri: https://grid-ontology.org/psa/v0.2/equipment/Transformer
+    package: GridEquipment
+  package_id: power.equipment.transformer
+  source_refs: []
+- id: power.equipment.transformer.TransformerEnd
+  name: TransformerEnd
+  display_name: TransformerEnd
+  primitive: Entity
+  namespace: https://grid-ontology.org/psa/v0.2/transformer/
+  iri: https://grid-ontology.org/psa/v0.2/transformer/TransformerEnd
+  description: A terminal point of a power transformer winding.
+  parents: []
+  package_id: power.equipment.transformer
+  source_refs: []
+- id: power.equipment.transformer.Terminal
+  name: Terminal
+  display_name: Terminal
+  primitive: Entity
+  namespace: https://grid-ontology.org/psa/v0.2/transformer/
+  iri: https://grid-ontology.org/psa/v0.2/transformer/Terminal
+  description: A connection point for equipment in the grid.
+  parents: []
+  package_id: power.equipment.transformer
+  source_refs: []

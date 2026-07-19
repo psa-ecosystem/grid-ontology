@@ -1,0 +1,1 @@
+/Users/nexlume/AI-Workspace/grid-ontology/docs/GBT43259301—2024/cim-base-full.md
