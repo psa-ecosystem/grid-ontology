@@ -165,6 +165,7 @@ from hypothesis import settings; settings.load_profile("dev")  # max_examples=10
 | ★★★★☆ | `docs/superpowers/plans/2026-06-22-grid-ontology.md` | 看任务依赖 |
 | ★★★☆☆ | `CHANGELOG.md` | 看版本 P0/P1 优先级 |
 | ★★★☆☆ | `docs/superpowers/plans/2026-07-{03..10}-*.md` | 看 Stage 4/5 子计划 |
+| ★★☆☆☆ | `docs/tooling-companions/cim-ontology-toolkit.md` | 想用 Claude Code 插件辅助生成/审阅 PSA package 时 |
 
 ---
 

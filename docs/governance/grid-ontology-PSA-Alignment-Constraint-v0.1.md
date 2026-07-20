@@ -140,4 +140,7 @@
 | **Level 2** | PSA Aligned | Contract / Tests / Documentation |
 | **Level 3** | PSA Native | CTS / Integration Test / Release Process |
 
-当前状态：**Level 1**。
+当前状态：**Level 2 (PSA Aligned)**。
+
+> 详见 ADR-0001（`docs/adr/ADR-0001-psa-level-means-current-certification.md`）与
+> `psa-baseline-compliance-report-v0.2.md`（Level 2 ✅ PASS，2026-07-17）。

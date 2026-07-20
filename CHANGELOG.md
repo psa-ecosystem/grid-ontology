@@ -39,6 +39,31 @@ Keep a Changelog 惯例折叠到具体版本号段下。
 - GAP-001/002/003/004: Closed（详见 `cts-gap-register.md`）
 - Roadmap: `docs/governance/level-2-roadmap.md` 全部 6 项 ✅
 
+## [1.7.0] - 2026-07-11
+
+Stage 5 跨适配器语义一致性 LLM 复审。在 v1.6.0 诊断 CLI 基础上加入
+LLM 语义仲裁，固化 5 adapter 一致性的不可达边界。
+
+### Added
+
+- **Stage 5 LLM review**：`scripts/stage4_validate.py --semantic-review --use-real-llm` 跨 5 adapter 产物做语义层面 LLM 复审
+- **LLM 三层熔断**：JSON 解析 → 业务校验 → 降级到上一步结果
+
+### References
+
+- Tag `v1.7.0`, commit `5b0b82a`
+- 详见 `docs/governance/release-process.md` §3 预发布清单
+
+## [1.6.0] - 2026-07-10
+
+Stage 4 跨适配器一致性诊断 CLI。在 v1.5.0 跨包引用修复基础上提供
+5 adapter 产物（OWL / SHACL / JSON-LD / JSON Schema / Python Types）一致性诊断。
+
+### Added
+
+- **Stage 4 validate CLI**：`python -m scripts.stage4_validate` 跨 adapter 比对 IRI/类名/属性集合
+- **Tests**：`tests/unit/test_stage4_validate.py` 866 LOC 覆盖
+
 ## [1.5.0] - 2026-07-01
 
 Stage 3 跨适配器一致性硬化收尾 + 跨包引用语义修复。在 v1.3.0 observability 基础上

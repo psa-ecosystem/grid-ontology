@@ -21,3 +21,4 @@ cim-ontology build --input docs/GBT43259301—2024/cim-base-full.md --output ./b
 - 设计规范：`docs/superpowers/specs/2026-06-22-grid-ontology-design.md`
 - 实施计划：`docs/superpowers/plans/2026-06-22-grid-ontology.md`
 - E2E 验证报告：`docs/cim-e2e-validation-report.md`
+- Tooling Companion: [cim-ontology-toolkit](./docs/tooling-companions/cim-ontology-toolkit.md)
