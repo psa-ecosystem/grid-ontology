@@ -1,0 +1,35 @@
+cts:
+  package_id: power.grid.core
+  version: 0.1.0
+  cases:
+  - id: CTS-TP-001
+    name: Package Metadata
+    check:
+    - manifest.yaml exists
+    - manifest.yaml schema valid
+  - id: CTS-TP-002
+    name: Entity Completeness
+    check:
+    - Asset exists
+    - Location exists
+    - Organization exists
+    - Equipment exists
+    - Measurement exists
+    - Work exists
+    - Event exists
+  - id: CTS-TP-003
+    name: Relation Integrity
+    check: []
+  - id: CTS-TP-004
+    name: Artifact Generation
+    check:
+    - OWL file exists and parses
+    - SHACL file exists and parses
+    - JSON-LD context exists and parses
+    - JSON Schema exists and validates example
+  - id: CTS-TP-005
+    name: Runtime Loading
+    check:
+    - Package loads into OntologyIR without error
+    - All classes have IRI
+    - All relations resolve target

@@ -1,0 +1,104 @@
+{
+  "@context": {
+    "@vocab": "https://grid-ontology.org/psa/v0.2/core/",
+    "id": "@id",
+    "type": "@type",
+    "Asset": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Asset",
+      "@type": "@id"
+    },
+    "assetId": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Asset.assetId"
+    },
+    "name": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Equipment.name"
+    },
+    "status": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Work.status"
+    },
+    "Location": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Location",
+      "@type": "@id"
+    },
+    "locationId": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Location.locationId"
+    },
+    "geoCoordinates": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Location.geoCoordinates"
+    },
+    "Organization": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Organization",
+      "@type": "@id"
+    },
+    "organizationId": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Organization.organizationId"
+    },
+    "role": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Organization.role"
+    },
+    "Equipment": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Equipment",
+      "@type": "@id"
+    },
+    "equipmentId": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Equipment.equipmentId"
+    },
+    "operatingStatus": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Equipment.operatingStatus"
+    },
+    "commissioningDate": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Equipment.commissioningDate"
+    },
+    "Measurement": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Measurement",
+      "@type": "@id"
+    },
+    "measurementId": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Measurement.measurementId"
+    },
+    "measurementType": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Measurement.measurementType"
+    },
+    "unit": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Measurement.unit"
+    },
+    "value": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Measurement.value"
+    },
+    "timestamp": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Measurement.timestamp"
+    },
+    "Work": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Work",
+      "@type": "@id"
+    },
+    "workId": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Work.workId"
+    },
+    "workType": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Work.workType"
+    },
+    "plannedStart": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Work.plannedStart"
+    },
+    "plannedEnd": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Work.plannedEnd"
+    },
+    "Event": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Event",
+      "@type": "@id"
+    },
+    "eventId": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Event.eventId"
+    },
+    "eventType": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Event.eventType"
+    },
+    "occurredAt": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Event.occurredAt"
+    },
+    "severity": {
+      "@id": "https://grid-ontology.org/psa/v0.2/core/Event.severity"
+    }
+  }
+}

@@ -39,6 +39,48 @@ Keep a Changelog 惯例折叠到具体版本号段下。
 - GAP-001/002/003/004: Closed（详见 `cts-gap-register.md`）
 - Roadmap: `docs/governance/level-2-roadmap.md` 全部 6 项 ✅
 
+## [1.8.0] - 2026-07-20
+
+Bootstrap Phase 1：在 v1.7.0 Stage 5 LLM 复审基础上交付 artifact 重建
++ 版本治理。本版本**不**改变 ontology 内容、不变更 PSA 契约；仅
+推进分发与宣告流程，为 Level 3 readiness 铺路。
+
+### Changed
+
+- **PSA Semantic Package 重新 emit**：`packages/transformer-0.1.0/`
+  与 `packages/core-0.1.0/`、`packages/equipment-0.1.0/` 三个 PSA
+  package 在 v1.8.0 同步重建（每个 14 / 13 / 13 文件）；语义与
+  v1.7.0 一致，仅 `manifest.generated_at` 时间戳更新
+- **`docs/tooling-companions/cim-ontology-toolkit.md`** 版本兼容表
+  增加 `v1.8.x` 行；保持 `cim-ontology-toolkit >= 0.1.0` 兼容
+- **`docs/governance/cts-gap-register.md`** §4 A1-A4 状态同步
+  （closed 2026-07-15~17）；A5（EASG Runtime PoC）+ A6（官方
+  PSA CTS）仍 Open
+
+### Added
+
+- **`docs/releases/v1.8.0-notes.md`**：v1.8.0 Release notes 文本，
+  供后续 GitHub Release / PSA 通告复用
+- **`docs/superpowers/plans/2026-07-20-level-3-bootstrap.md`**：
+  Level 3 Bootstrap Plan v0.1（4 阶段：T2-A / T2-B / T2-C / T3-A），
+  含显式 gate、A5+A6 依赖、psa-validator 等级 3 证据要求
+
+### Test
+
+- 全量套件 **640 passed, 1 skipped**（与 v1.7.0 baseline 一致）
+- 新增 0 用例；旧测试保持 green（artifact 重建未引入回归）
+- ruff lint `src/cim_ontology/psa/` + `scripts/build_psa_package.py`
+  + `tests/psa/` + `tests/unit/test_psa_package_builder.py` All checks passed
+
+### References
+
+- Plan: `docs/superpowers/plans/2026-07-20-level-3-bootstrap.md`
+- Notes: `docs/releases/v1.8.0-notes.md`
+- Tag `v1.8.0`（本地未推送；tag 与 push 需用户**显式**授权）
+- ADR-0001 (`maturity.psa_level: 2` 保持不变，Level 3 推进 gated by
+  A5+A6+psa-validator)
+- `project.yaml` `maturity.psa_level: 2` 维持
+
 ## [1.7.0] - 2026-07-11
 
 Stage 5 跨适配器语义一致性 LLM 复审。在 v1.6.0 诊断 CLI 基础上加入

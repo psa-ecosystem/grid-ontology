@@ -1,0 +1,172 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix psa: <https://grid-ontology.org/psa/v0.2/core/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://grid-ontology.org/psa/v0.2/core> a owl:Ontology ;
+    rdfs:label "GridCore"@en ;
+    owl:versionInfo "0.1.0" .
+
+psa:Asset.assetId a owl:DatatypeProperty ;
+    rdfs:label "assetId"@en ;
+    rdfs:domain psa:Asset ;
+    rdfs:range xsd:string .
+
+psa:Asset.name a owl:DatatypeProperty ;
+    rdfs:label "name"@en ;
+    rdfs:domain psa:Asset ;
+    rdfs:range xsd:string .
+
+psa:Asset.status a owl:DatatypeProperty ;
+    rdfs:label "status"@en ;
+    rdfs:domain psa:Asset ;
+    rdfs:range xsd:string .
+
+psa:Equipment.commissioningDate a owl:DatatypeProperty ;
+    rdfs:label "commissioningDate"@en ;
+    rdfs:domain psa:Equipment ;
+    rdfs:range xsd:date .
+
+psa:Equipment.equipmentId a owl:DatatypeProperty ;
+    rdfs:label "equipmentId"@en ;
+    rdfs:domain psa:Equipment ;
+    rdfs:range xsd:string .
+
+psa:Equipment.name a owl:DatatypeProperty ;
+    rdfs:label "name"@en ;
+    rdfs:domain psa:Equipment ;
+    rdfs:range xsd:string .
+
+psa:Equipment.operatingStatus a owl:DatatypeProperty ;
+    rdfs:label "operatingStatus"@en ;
+    rdfs:domain psa:Equipment ;
+    rdfs:range xsd:string .
+
+psa:Event.eventId a owl:DatatypeProperty ;
+    rdfs:label "eventId"@en ;
+    rdfs:domain psa:Event ;
+    rdfs:range xsd:string .
+
+psa:Event.eventType a owl:DatatypeProperty ;
+    rdfs:label "eventType"@en ;
+    rdfs:domain psa:Event ;
+    rdfs:range xsd:string .
+
+psa:Event.occurredAt a owl:DatatypeProperty ;
+    rdfs:label "occurredAt"@en ;
+    rdfs:domain psa:Event ;
+    rdfs:range xsd:dateTime .
+
+psa:Event.severity a owl:DatatypeProperty ;
+    rdfs:label "severity"@en ;
+    rdfs:domain psa:Event ;
+    rdfs:range xsd:string .
+
+psa:Location.geoCoordinates a owl:DatatypeProperty ;
+    rdfs:label "geoCoordinates"@en ;
+    rdfs:domain psa:Location ;
+    rdfs:range xsd:string .
+
+psa:Location.locationId a owl:DatatypeProperty ;
+    rdfs:label "locationId"@en ;
+    rdfs:domain psa:Location ;
+    rdfs:range xsd:string .
+
+psa:Location.name a owl:DatatypeProperty ;
+    rdfs:label "name"@en ;
+    rdfs:domain psa:Location ;
+    rdfs:range xsd:string .
+
+psa:Measurement.measurementId a owl:DatatypeProperty ;
+    rdfs:label "measurementId"@en ;
+    rdfs:domain psa:Measurement ;
+    rdfs:range xsd:string .
+
+psa:Measurement.measurementType a owl:DatatypeProperty ;
+    rdfs:label "measurementType"@en ;
+    rdfs:domain psa:Measurement ;
+    rdfs:range xsd:string .
+
+psa:Measurement.timestamp a owl:DatatypeProperty ;
+    rdfs:label "timestamp"@en ;
+    rdfs:domain psa:Measurement ;
+    rdfs:range xsd:dateTime .
+
+psa:Measurement.unit a owl:DatatypeProperty ;
+    rdfs:label "unit"@en ;
+    rdfs:domain psa:Measurement ;
+    rdfs:range xsd:string .
+
+psa:Measurement.value a owl:DatatypeProperty ;
+    rdfs:label "value"@en ;
+    rdfs:domain psa:Measurement ;
+    rdfs:range xsd:double .
+
+psa:Organization.name a owl:DatatypeProperty ;
+    rdfs:label "name"@en ;
+    rdfs:domain psa:Organization ;
+    rdfs:range xsd:string .
+
+psa:Organization.organizationId a owl:DatatypeProperty ;
+    rdfs:label "organizationId"@en ;
+    rdfs:domain psa:Organization ;
+    rdfs:range xsd:string .
+
+psa:Organization.role a owl:DatatypeProperty ;
+    rdfs:label "role"@en ;
+    rdfs:domain psa:Organization ;
+    rdfs:range xsd:string .
+
+psa:Work.plannedEnd a owl:DatatypeProperty ;
+    rdfs:label "plannedEnd"@en ;
+    rdfs:domain psa:Work ;
+    rdfs:range xsd:dateTime .
+
+psa:Work.plannedStart a owl:DatatypeProperty ;
+    rdfs:label "plannedStart"@en ;
+    rdfs:domain psa:Work ;
+    rdfs:range xsd:dateTime .
+
+psa:Work.status a owl:DatatypeProperty ;
+    rdfs:label "status"@en ;
+    rdfs:domain psa:Work ;
+    rdfs:range xsd:string .
+
+psa:Work.workId a owl:DatatypeProperty ;
+    rdfs:label "workId"@en ;
+    rdfs:domain psa:Work ;
+    rdfs:range xsd:string .
+
+psa:Work.workType a owl:DatatypeProperty ;
+    rdfs:label "workType"@en ;
+    rdfs:domain psa:Work ;
+    rdfs:range xsd:string .
+
+psa:Asset a owl:Class ;
+    rdfs:label "Asset"@en ;
+    rdfs:comment "A physical or logical resource that is owned or managed by a grid operator."@zh .
+
+psa:Location a owl:Class ;
+    rdfs:label "Location"@en ;
+    rdfs:comment "A geographical or topological place where assets are installed."@zh .
+
+psa:Organization a owl:Class ;
+    rdfs:label "Organization"@en ;
+    rdfs:comment "A company, department, or organizational unit involved in grid operations."@zh .
+
+psa:Equipment a owl:Class ;
+    rdfs:label "Equipment"@en ;
+    rdfs:comment "A grid asset that performs an electrical or support function."@zh .
+
+psa:Event a owl:Class ;
+    rdfs:label "Event"@en ;
+    rdfs:comment "An occurrence of significance to grid operations."@zh .
+
+psa:Measurement a owl:Class ;
+    rdfs:label "Measurement"@en ;
+    rdfs:comment "A quantified observation of a physical or logical quantity."@zh .
+
+psa:Work a owl:Class ;
+    rdfs:label "Work"@en ;
+    rdfs:comment "A task, activity, or work order performed on grid assets."@zh .
+

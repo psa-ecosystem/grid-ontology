@@ -1,0 +1,40 @@
+relations:
+- id: power.equipment.installedIn
+  name: installedIn
+  display_name: installedIn
+  primitive: Relation
+  source:
+    entity_id: power.equipment.Transformer
+    iri: https://grid-ontology.org/psa/v0.2/equipment/Transformer
+  target:
+    entity_id: power.grid.core.Location
+    iri: https://grid-ontology.org/psa/v0.2/core/Location
+  multiplicity: 0..1
+  inverse_name: null
+  description: The location where the transformer is installed.
+- id: power.equipment.operatedBy
+  name: operatedBy
+  display_name: operatedBy
+  primitive: Relation
+  source:
+    entity_id: power.equipment.Transformer
+    iri: https://grid-ontology.org/psa/v0.2/equipment/Transformer
+  target:
+    entity_id: power.grid.core.Organization
+    iri: https://grid-ontology.org/psa/v0.2/core/Organization
+  multiplicity: 0..1
+  inverse_name: null
+  description: Organization responsible for operating the transformer.
+- id: power.equipment.measures
+  name: measures
+  display_name: measures
+  primitive: Relation
+  source:
+    entity_id: power.equipment.Meter
+    iri: https://grid-ontology.org/psa/v0.2/equipment/Meter
+  target:
+    entity_id: power.grid.core.Measurement
+    iri: https://grid-ontology.org/psa/v0.2/core/Measurement
+  multiplicity: 0..*
+  inverse_name: null
+  description: Measurements collected by this meter.

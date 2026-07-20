@@ -1,0 +1,50 @@
+{
+  "@context": "https://grid-ontology.org/psa/v0.2/equipment/context",
+  "@graph": [
+    {
+      "@type": "Transformer",
+      "id": "Transformer001",
+      "ratedCapacity": 1.0,
+      "primaryVoltage": 1.0,
+      "secondaryVoltage": 1.0,
+      "manufacturer": "manufacturer",
+      "windingType": "windingType"
+    },
+    {
+      "@type": "Breaker",
+      "id": "Breaker001",
+      "ratedCurrent": 1.0,
+      "breakingCapacity": 1.0,
+      "mechanism": "mechanism",
+      "isOpen": true
+    },
+    {
+      "@type": "Line",
+      "id": "Line001",
+      "length": 1.0,
+      "conductorType": "conductorType",
+      "ratedCurrent": 1.0
+    },
+    {
+      "@type": "Cable",
+      "id": "Cable001",
+      "length": 1.0,
+      "insulationType": "insulationType",
+      "ratedVoltage": 1.0
+    },
+    {
+      "@type": "ProtectionDevice",
+      "id": "ProtectionDevice001",
+      "protectionType": "protectionType",
+      "settingGroup": "settingGroup",
+      "relayModel": "relayModel"
+    },
+    {
+      "@type": "Meter",
+      "id": "Meter001",
+      "meterId": "meterId",
+      "meterType": "meterType",
+      "communicationProtocol": "communicationProtocol"
+    }
+  ]
+}

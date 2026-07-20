@@ -1,0 +1,253 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://grid-ontology.org/psa/v0.2/core/schema",
+  "title": "GridCore",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "@graph": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/Asset"
+          },
+          {
+            "$ref": "#/$defs/Location"
+          },
+          {
+            "$ref": "#/$defs/Organization"
+          },
+          {
+            "$ref": "#/$defs/Equipment"
+          },
+          {
+            "$ref": "#/$defs/Measurement"
+          },
+          {
+            "$ref": "#/$defs/Work"
+          },
+          {
+            "$ref": "#/$defs/Event"
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "@graph"
+  ],
+  "$defs": {
+    "Asset": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "const": "Asset"
+        },
+        "id": {
+          "type": "string"
+        },
+        "assetId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "@type",
+        "id",
+        "assetId"
+      ],
+      "additionalProperties": false
+    },
+    "Location": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "const": "Location"
+        },
+        "id": {
+          "type": "string"
+        },
+        "locationId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "geoCoordinates": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "@type",
+        "id",
+        "locationId"
+      ],
+      "additionalProperties": false
+    },
+    "Organization": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "const": "Organization"
+        },
+        "id": {
+          "type": "string"
+        },
+        "organizationId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "@type",
+        "id",
+        "organizationId",
+        "name"
+      ],
+      "additionalProperties": false
+    },
+    "Equipment": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "const": "Equipment"
+        },
+        "id": {
+          "type": "string"
+        },
+        "equipmentId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "operatingStatus": {
+          "type": "string"
+        },
+        "commissioningDate": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "@type",
+        "id",
+        "equipmentId"
+      ],
+      "additionalProperties": false
+    },
+    "Measurement": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "const": "Measurement"
+        },
+        "id": {
+          "type": "string"
+        },
+        "measurementId": {
+          "type": "string"
+        },
+        "measurementType": {
+          "type": "string"
+        },
+        "unit": {
+          "type": "string"
+        },
+        "value": {
+          "type": "number"
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "@type",
+        "id",
+        "measurementId"
+      ],
+      "additionalProperties": false
+    },
+    "Work": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "const": "Work"
+        },
+        "id": {
+          "type": "string"
+        },
+        "workId": {
+          "type": "string"
+        },
+        "workType": {
+          "type": "string"
+        },
+        "plannedStart": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "plannedEnd": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "status": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "@type",
+        "id",
+        "workId"
+      ],
+      "additionalProperties": false
+    },
+    "Event": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "const": "Event"
+        },
+        "id": {
+          "type": "string"
+        },
+        "eventId": {
+          "type": "string"
+        },
+        "eventType": {
+          "type": "string"
+        },
+        "occurredAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "severity": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "@type",
+        "id",
+        "eventId"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

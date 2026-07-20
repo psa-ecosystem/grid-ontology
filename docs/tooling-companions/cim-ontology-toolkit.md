@@ -48,10 +48,11 @@ cc --plugin-dir /Users/nexlume/AI-Workspace/cim-ontology-toolkit
 
 | grid-ontology 版本 | cim-ontology-toolkit 兼容版本 | 备注 |
 |--------------------|------------------------------|------|
+| v1.8.x             | >= 0.1.0                     | Bootstrap Phase 1，artifact 重建（语义不变）|
 | v1.7.x             | >= 0.1.0                     | 当前 Level 2 baseline |
 | v1.5.x             | >= 0.1.0                     | 历史兼容 |
 
-> cim-ontology-toolkit 0.1.0 release（commit `7978e25`，2026-07-20）首次发布，与 grid-ontology v1.7.x PSA Level 2 基线对齐。
+> cim-ontology-toolkit 0.1.0 release（commit `7978e25`，2026-07-20）首次发布，与 grid-ontology v1.7.x PSA Level 2 基线对齐。v1.8.0 兼容该 toolkit（语义与 v1.7.0 完全一致）。
 
 ---
 

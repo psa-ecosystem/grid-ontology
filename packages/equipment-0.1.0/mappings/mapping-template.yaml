@@ -1,0 +1,106 @@
+mapping_anchors:
+- semantic_id: power.equipment.ratedCapacity
+  expected_mappings:
+  - system: PMS
+    object: Transformer
+    field: ''
+- semantic_id: power.equipment.primaryVoltage
+  expected_mappings:
+  - system: PMS
+    object: Transformer
+    field: ''
+- semantic_id: power.equipment.secondaryVoltage
+  expected_mappings:
+  - system: PMS
+    object: Transformer
+    field: ''
+- semantic_id: power.equipment.manufacturer
+  expected_mappings:
+  - system: PMS
+    object: Transformer
+    field: ''
+- semantic_id: power.equipment.windingType
+  expected_mappings:
+  - system: PMS
+    object: Transformer
+    field: ''
+- semantic_id: power.equipment.ratedCurrent
+  expected_mappings:
+  - system: PMS
+    object: Breaker
+    field: ''
+- semantic_id: power.equipment.breakingCapacity
+  expected_mappings:
+  - system: PMS
+    object: Breaker
+    field: ''
+- semantic_id: power.equipment.mechanism
+  expected_mappings:
+  - system: PMS
+    object: Breaker
+    field: ''
+- semantic_id: power.equipment.isOpen
+  expected_mappings:
+  - system: PMS
+    object: Breaker
+    field: ''
+- semantic_id: power.equipment.length
+  expected_mappings:
+  - system: PMS
+    object: Line
+    field: ''
+- semantic_id: power.equipment.conductorType
+  expected_mappings:
+  - system: PMS
+    object: Line
+    field: ''
+- semantic_id: power.equipment.ratedCurrent
+  expected_mappings:
+  - system: PMS
+    object: Line
+    field: ''
+- semantic_id: power.equipment.length
+  expected_mappings:
+  - system: PMS
+    object: Cable
+    field: ''
+- semantic_id: power.equipment.insulationType
+  expected_mappings:
+  - system: PMS
+    object: Cable
+    field: ''
+- semantic_id: power.equipment.ratedVoltage
+  expected_mappings:
+  - system: PMS
+    object: Cable
+    field: ''
+- semantic_id: power.equipment.protectionType
+  expected_mappings:
+  - system: PMS
+    object: ProtectionDevice
+    field: ''
+- semantic_id: power.equipment.settingGroup
+  expected_mappings:
+  - system: PMS
+    object: ProtectionDevice
+    field: ''
+- semantic_id: power.equipment.relayModel
+  expected_mappings:
+  - system: PMS
+    object: ProtectionDevice
+    field: ''
+- semantic_id: power.equipment.meterId
+  expected_mappings:
+  - system: PMS
+    object: Meter
+    field: ''
+- semantic_id: power.equipment.meterType
+  expected_mappings:
+  - system: PMS
+    object: Meter
+    field: ''
+- semantic_id: power.equipment.communicationProtocol
+  expected_mappings:
+  - system: PMS
+    object: Meter
+    field: ''

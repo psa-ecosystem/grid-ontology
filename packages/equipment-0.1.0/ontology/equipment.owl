@@ -1,0 +1,159 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix psa: <https://grid-ontology.org/psa/v0.2/equipment/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://grid-ontology.org/psa/v0.2/equipment> a owl:Ontology ;
+    rdfs:label "GridEquipment"@en ;
+    owl:versionInfo "0.1.0" .
+
+psa:Breaker.breakingCapacity a owl:DatatypeProperty ;
+    rdfs:label "breakingCapacity"@en ;
+    rdfs:domain psa:Breaker ;
+    rdfs:range xsd:double .
+
+psa:Breaker.isOpen a owl:DatatypeProperty ;
+    rdfs:label "isOpen"@en ;
+    rdfs:domain psa:Breaker ;
+    rdfs:range xsd:boolean .
+
+psa:Breaker.mechanism a owl:DatatypeProperty ;
+    rdfs:label "mechanism"@en ;
+    rdfs:domain psa:Breaker ;
+    rdfs:range xsd:string .
+
+psa:Breaker.ratedCurrent a owl:DatatypeProperty ;
+    rdfs:label "ratedCurrent"@en ;
+    rdfs:domain psa:Breaker ;
+    rdfs:range xsd:double .
+
+psa:Cable.insulationType a owl:DatatypeProperty ;
+    rdfs:label "insulationType"@en ;
+    rdfs:domain psa:Cable ;
+    rdfs:range xsd:string .
+
+psa:Cable.length a owl:DatatypeProperty ;
+    rdfs:label "length"@en ;
+    rdfs:domain psa:Cable ;
+    rdfs:range xsd:double .
+
+psa:Cable.ratedVoltage a owl:DatatypeProperty ;
+    rdfs:label "ratedVoltage"@en ;
+    rdfs:domain psa:Cable ;
+    rdfs:range xsd:double .
+
+psa:Line.conductorType a owl:DatatypeProperty ;
+    rdfs:label "conductorType"@en ;
+    rdfs:domain psa:Line ;
+    rdfs:range xsd:string .
+
+psa:Line.length a owl:DatatypeProperty ;
+    rdfs:label "length"@en ;
+    rdfs:domain psa:Line ;
+    rdfs:range xsd:double .
+
+psa:Line.ratedCurrent a owl:DatatypeProperty ;
+    rdfs:label "ratedCurrent"@en ;
+    rdfs:domain psa:Line ;
+    rdfs:range xsd:double .
+
+psa:Meter.communicationProtocol a owl:DatatypeProperty ;
+    rdfs:label "communicationProtocol"@en ;
+    rdfs:domain psa:Meter ;
+    rdfs:range xsd:string .
+
+psa:Meter.measures a owl:ObjectProperty ;
+    rdfs:label "measures"@en ;
+    rdfs:domain psa:Meter ;
+    rdfs:range <https://grid-ontology.org/psa/v0.2/core/Measurement> .
+
+psa:Meter.meterId a owl:DatatypeProperty ;
+    rdfs:label "meterId"@en ;
+    rdfs:domain psa:Meter ;
+    rdfs:range xsd:string .
+
+psa:Meter.meterType a owl:DatatypeProperty ;
+    rdfs:label "meterType"@en ;
+    rdfs:domain psa:Meter ;
+    rdfs:range xsd:string .
+
+psa:ProtectionDevice.protectionType a owl:DatatypeProperty ;
+    rdfs:label "protectionType"@en ;
+    rdfs:domain psa:ProtectionDevice ;
+    rdfs:range xsd:string .
+
+psa:ProtectionDevice.relayModel a owl:DatatypeProperty ;
+    rdfs:label "relayModel"@en ;
+    rdfs:domain psa:ProtectionDevice ;
+    rdfs:range xsd:string .
+
+psa:ProtectionDevice.settingGroup a owl:DatatypeProperty ;
+    rdfs:label "settingGroup"@en ;
+    rdfs:domain psa:ProtectionDevice ;
+    rdfs:range xsd:string .
+
+psa:Transformer.installedIn a owl:ObjectProperty ;
+    rdfs:label "installedIn"@en ;
+    rdfs:domain psa:Transformer ;
+    rdfs:range <https://grid-ontology.org/psa/v0.2/core/Location> .
+
+psa:Transformer.manufacturer a owl:DatatypeProperty ;
+    rdfs:label "manufacturer"@en ;
+    rdfs:domain psa:Transformer ;
+    rdfs:range xsd:string .
+
+psa:Transformer.operatedBy a owl:ObjectProperty ;
+    rdfs:label "operatedBy"@en ;
+    rdfs:domain psa:Transformer ;
+    rdfs:range <https://grid-ontology.org/psa/v0.2/core/Organization> .
+
+psa:Transformer.primaryVoltage a owl:DatatypeProperty ;
+    rdfs:label "primaryVoltage"@en ;
+    rdfs:domain psa:Transformer ;
+    rdfs:range xsd:double .
+
+psa:Transformer.ratedCapacity a owl:DatatypeProperty ;
+    rdfs:label "ratedCapacity"@en ;
+    rdfs:domain psa:Transformer ;
+    rdfs:range xsd:double .
+
+psa:Transformer.secondaryVoltage a owl:DatatypeProperty ;
+    rdfs:label "secondaryVoltage"@en ;
+    rdfs:domain psa:Transformer ;
+    rdfs:range xsd:double .
+
+psa:Transformer.windingType a owl:DatatypeProperty ;
+    rdfs:label "windingType"@en ;
+    rdfs:domain psa:Transformer ;
+    rdfs:range xsd:string .
+
+psa:Cable a owl:Class ;
+    rdfs:label "Cable"@en ;
+    rdfs:comment "An insulated conductor typically installed underground or underwater."@zh ;
+    rdfs:subClassOf <https://grid-ontology.org/psa/v0.2/core/Equipment> .
+
+psa:Line a owl:Class ;
+    rdfs:label "Line"@en ;
+    rdfs:comment "A conductor or group of conductors used to transfer electrical energy between two points."@zh ;
+    rdfs:subClassOf <https://grid-ontology.org/psa/v0.2/core/Equipment> .
+
+psa:ProtectionDevice a owl:Class ;
+    rdfs:label "ProtectionDevice"@en ;
+    rdfs:comment "A device that detects abnormal conditions and initiates isolation of faulty equipment."@zh ;
+    rdfs:subClassOf <https://grid-ontology.org/psa/v0.2/core/Equipment> .
+
+psa:Breaker a owl:Class ;
+    rdfs:label "Breaker"@en ;
+    rdfs:comment "A switching device capable of making, carrying, and breaking currents under normal and fault conditions."@zh ;
+    rdfs:subClassOf <https://grid-ontology.org/psa/v0.2/core/Equipment> .
+
+psa:Meter a owl:Class ;
+    rdfs:label "Meter"@en ;
+    rdfs:comment "A device that measures and records electrical quantities."@zh ;
+    rdfs:subClassOf <https://grid-ontology.org/psa/v0.2/core/Equipment> .
+
+psa:Transformer a owl:Class ;
+    rdfs:label "Transformer"@en ;
+    rdfs:comment "A static device that transfers electrical energy between circuits through electromagnetic induction."@zh ;
+    rdfs:subClassOf <https://grid-ontology.org/psa/v0.2/core/Equipment> .
+

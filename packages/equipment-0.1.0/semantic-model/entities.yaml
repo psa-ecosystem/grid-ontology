@@ -1,0 +1,77 @@
+entities:
+- id: power.equipment.Transformer
+  name: Transformer
+  display_name: Transformer
+  primitive: Entity
+  namespace: https://grid-ontology.org/psa/v0.2/equipment/
+  iri: https://grid-ontology.org/psa/v0.2/equipment/Transformer
+  description: A static device that transfers electrical energy between circuits through
+    electromagnetic induction.
+  parents:
+  - iri: https://grid-ontology.org/psa/v0.2/core/Equipment
+    package: GridCore
+  package_id: power.equipment
+  source_refs: []
+- id: power.equipment.Breaker
+  name: Breaker
+  display_name: Breaker
+  primitive: Entity
+  namespace: https://grid-ontology.org/psa/v0.2/equipment/
+  iri: https://grid-ontology.org/psa/v0.2/equipment/Breaker
+  description: A switching device capable of making, carrying, and breaking currents
+    under normal and fault conditions.
+  parents:
+  - iri: https://grid-ontology.org/psa/v0.2/core/Equipment
+    package: GridCore
+  package_id: power.equipment
+  source_refs: []
+- id: power.equipment.Line
+  name: Line
+  display_name: Line
+  primitive: Entity
+  namespace: https://grid-ontology.org/psa/v0.2/equipment/
+  iri: https://grid-ontology.org/psa/v0.2/equipment/Line
+  description: A conductor or group of conductors used to transfer electrical energy
+    between two points.
+  parents:
+  - iri: https://grid-ontology.org/psa/v0.2/core/Equipment
+    package: GridCore
+  package_id: power.equipment
+  source_refs: []
+- id: power.equipment.Cable
+  name: Cable
+  display_name: Cable
+  primitive: Entity
+  namespace: https://grid-ontology.org/psa/v0.2/equipment/
+  iri: https://grid-ontology.org/psa/v0.2/equipment/Cable
+  description: An insulated conductor typically installed underground or underwater.
+  parents:
+  - iri: https://grid-ontology.org/psa/v0.2/core/Equipment
+    package: GridCore
+  package_id: power.equipment
+  source_refs: []
+- id: power.equipment.ProtectionDevice
+  name: ProtectionDevice
+  display_name: ProtectionDevice
+  primitive: Entity
+  namespace: https://grid-ontology.org/psa/v0.2/equipment/
+  iri: https://grid-ontology.org/psa/v0.2/equipment/ProtectionDevice
+  description: A device that detects abnormal conditions and initiates isolation of
+    faulty equipment.
+  parents:
+  - iri: https://grid-ontology.org/psa/v0.2/core/Equipment
+    package: GridCore
+  package_id: power.equipment
+  source_refs: []
+- id: power.equipment.Meter
+  name: Meter
+  display_name: Meter
+  primitive: Entity
+  namespace: https://grid-ontology.org/psa/v0.2/equipment/
+  iri: https://grid-ontology.org/psa/v0.2/equipment/Meter
+  description: A device that measures and records electrical quantities.
+  parents:
+  - iri: https://grid-ontology.org/psa/v0.2/core/Equipment
+    package: GridCore
+  package_id: power.equipment
+  source_refs: []

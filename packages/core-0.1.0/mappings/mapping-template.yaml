@@ -1,0 +1,136 @@
+mapping_anchors:
+- semantic_id: power.grid.core.assetId
+  expected_mappings:
+  - system: PMS
+    object: Asset
+    field: ''
+- semantic_id: power.grid.core.name
+  expected_mappings:
+  - system: PMS
+    object: Asset
+    field: ''
+- semantic_id: power.grid.core.status
+  expected_mappings:
+  - system: PMS
+    object: Asset
+    field: ''
+- semantic_id: power.grid.core.locationId
+  expected_mappings:
+  - system: PMS
+    object: Location
+    field: ''
+- semantic_id: power.grid.core.name
+  expected_mappings:
+  - system: PMS
+    object: Location
+    field: ''
+- semantic_id: power.grid.core.geoCoordinates
+  expected_mappings:
+  - system: PMS
+    object: Location
+    field: ''
+- semantic_id: power.grid.core.organizationId
+  expected_mappings:
+  - system: PMS
+    object: Organization
+    field: ''
+- semantic_id: power.grid.core.name
+  expected_mappings:
+  - system: PMS
+    object: Organization
+    field: ''
+- semantic_id: power.grid.core.role
+  expected_mappings:
+  - system: PMS
+    object: Organization
+    field: ''
+- semantic_id: power.grid.core.equipmentId
+  expected_mappings:
+  - system: PMS
+    object: Equipment
+    field: ''
+- semantic_id: power.grid.core.name
+  expected_mappings:
+  - system: PMS
+    object: Equipment
+    field: ''
+- semantic_id: power.grid.core.operatingStatus
+  expected_mappings:
+  - system: PMS
+    object: Equipment
+    field: ''
+- semantic_id: power.grid.core.commissioningDate
+  expected_mappings:
+  - system: PMS
+    object: Equipment
+    field: ''
+- semantic_id: power.grid.core.measurementId
+  expected_mappings:
+  - system: PMS
+    object: Measurement
+    field: ''
+- semantic_id: power.grid.core.measurementType
+  expected_mappings:
+  - system: PMS
+    object: Measurement
+    field: ''
+- semantic_id: power.grid.core.unit
+  expected_mappings:
+  - system: PMS
+    object: Measurement
+    field: ''
+- semantic_id: power.grid.core.value
+  expected_mappings:
+  - system: PMS
+    object: Measurement
+    field: ''
+- semantic_id: power.grid.core.timestamp
+  expected_mappings:
+  - system: PMS
+    object: Measurement
+    field: ''
+- semantic_id: power.grid.core.workId
+  expected_mappings:
+  - system: PMS
+    object: Work
+    field: ''
+- semantic_id: power.grid.core.workType
+  expected_mappings:
+  - system: PMS
+    object: Work
+    field: ''
+- semantic_id: power.grid.core.plannedStart
+  expected_mappings:
+  - system: PMS
+    object: Work
+    field: ''
+- semantic_id: power.grid.core.plannedEnd
+  expected_mappings:
+  - system: PMS
+    object: Work
+    field: ''
+- semantic_id: power.grid.core.status
+  expected_mappings:
+  - system: PMS
+    object: Work
+    field: ''
+- semantic_id: power.grid.core.eventId
+  expected_mappings:
+  - system: PMS
+    object: Event
+    field: ''
+- semantic_id: power.grid.core.eventType
+  expected_mappings:
+  - system: PMS
+    object: Event
+    field: ''
+- semantic_id: power.grid.core.occurredAt
+  expected_mappings:
+  - system: PMS
+    object: Event
+    field: ''
+- semantic_id: power.grid.core.severity
+  expected_mappings:
+  - system: PMS
+    object: Event
+    field: ''

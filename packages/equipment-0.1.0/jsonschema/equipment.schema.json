@@ -1,0 +1,216 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://grid-ontology.org/psa/v0.2/equipment/schema",
+  "title": "GridEquipment",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "@graph": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/Transformer"
+          },
+          {
+            "$ref": "#/$defs/Breaker"
+          },
+          {
+            "$ref": "#/$defs/Line"
+          },
+          {
+            "$ref": "#/$defs/Cable"
+          },
+          {
+            "$ref": "#/$defs/ProtectionDevice"
+          },
+          {
+            "$ref": "#/$defs/Meter"
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "@graph"
+  ],
+  "$defs": {
+    "Transformer": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "const": "Transformer"
+        },
+        "id": {
+          "type": "string"
+        },
+        "ratedCapacity": {
+          "type": "number"
+        },
+        "primaryVoltage": {
+          "type": "number"
+        },
+        "secondaryVoltage": {
+          "type": "number"
+        },
+        "manufacturer": {
+          "type": "string"
+        },
+        "windingType": {
+          "type": "string"
+        },
+        "installedIn": {
+          "type": "string"
+        },
+        "operatedBy": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "@type",
+        "id"
+      ],
+      "additionalProperties": false
+    },
+    "Breaker": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "const": "Breaker"
+        },
+        "id": {
+          "type": "string"
+        },
+        "ratedCurrent": {
+          "type": "number"
+        },
+        "breakingCapacity": {
+          "type": "number"
+        },
+        "mechanism": {
+          "type": "string"
+        },
+        "isOpen": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "@type",
+        "id"
+      ],
+      "additionalProperties": false
+    },
+    "Line": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "const": "Line"
+        },
+        "id": {
+          "type": "string"
+        },
+        "length": {
+          "type": "number"
+        },
+        "conductorType": {
+          "type": "string"
+        },
+        "ratedCurrent": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "@type",
+        "id"
+      ],
+      "additionalProperties": false
+    },
+    "Cable": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "const": "Cable"
+        },
+        "id": {
+          "type": "string"
+        },
+        "length": {
+          "type": "number"
+        },
+        "insulationType": {
+          "type": "string"
+        },
+        "ratedVoltage": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "@type",
+        "id"
+      ],
+      "additionalProperties": false
+    },
+    "ProtectionDevice": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "const": "ProtectionDevice"
+        },
+        "id": {
+          "type": "string"
+        },
+        "protectionType": {
+          "type": "string"
+        },
+        "settingGroup": {
+          "type": "string"
+        },
+        "relayModel": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "@type",
+        "id"
+      ],
+      "additionalProperties": false
+    },
+    "Meter": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "const": "Meter"
+        },
+        "id": {
+          "type": "string"
+        },
+        "meterId": {
+          "type": "string"
+        },
+        "meterType": {
+          "type": "string"
+        },
+        "communicationProtocol": {
+          "type": "string"
+        },
+        "measures": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "@type",
+        "id",
+        "meterId"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

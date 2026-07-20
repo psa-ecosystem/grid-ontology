@@ -1,0 +1,60 @@
+{
+  "@context": "https://grid-ontology.org/psa/v0.2/core/context",
+  "@graph": [
+    {
+      "@type": "Asset",
+      "id": "Asset001",
+      "assetId": "assetId",
+      "name": "name",
+      "status": "status"
+    },
+    {
+      "@type": "Location",
+      "id": "Location001",
+      "locationId": "locationId",
+      "name": "name",
+      "geoCoordinates": "geoCoordinates"
+    },
+    {
+      "@type": "Organization",
+      "id": "Organization001",
+      "organizationId": "organizationId",
+      "name": "name",
+      "role": "role"
+    },
+    {
+      "@type": "Equipment",
+      "id": "Equipment001",
+      "equipmentId": "equipmentId",
+      "name": "name",
+      "operatingStatus": "operatingStatus",
+      "commissioningDate": ""
+    },
+    {
+      "@type": "Measurement",
+      "id": "Measurement001",
+      "measurementId": "measurementId",
+      "measurementType": "measurementType",
+      "unit": "unit",
+      "value": 1.0,
+      "timestamp": ""
+    },
+    {
+      "@type": "Work",
+      "id": "Work001",
+      "workId": "workId",
+      "workType": "workType",
+      "plannedStart": "",
+      "plannedEnd": "",
+      "status": "status"
+    },
+    {
+      "@type": "Event",
+      "id": "Event001",
+      "eventId": "eventId",
+      "eventType": "eventType",
+      "occurredAt": "",
+      "severity": "severity"
+    }
+  ]
+}

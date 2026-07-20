@@ -1,0 +1,295 @@
+attributes:
+- id: power.equipment.ratedCapacity
+  name: ratedCapacity
+  display_name: ratedCapacity
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.Transformer
+    iri: https://grid-ontology.org/psa/v0.2/equipment/Transformer
+  range:
+    type: Decimal
+    xsd: xsd:double
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: Rated apparent power in MVA.
+- id: power.equipment.primaryVoltage
+  name: primaryVoltage
+  display_name: primaryVoltage
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.Transformer
+    iri: https://grid-ontology.org/psa/v0.2/equipment/Transformer
+  range:
+    type: Decimal
+    xsd: xsd:double
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: Primary rated voltage in kV.
+- id: power.equipment.secondaryVoltage
+  name: secondaryVoltage
+  display_name: secondaryVoltage
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.Transformer
+    iri: https://grid-ontology.org/psa/v0.2/equipment/Transformer
+  range:
+    type: Decimal
+    xsd: xsd:double
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: Secondary rated voltage in kV.
+- id: power.equipment.manufacturer
+  name: manufacturer
+  display_name: manufacturer
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.Transformer
+    iri: https://grid-ontology.org/psa/v0.2/equipment/Transformer
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: null
+- id: power.equipment.windingType
+  name: windingType
+  display_name: windingType
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.Transformer
+    iri: https://grid-ontology.org/psa/v0.2/equipment/Transformer
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: e.g., twoWinding, threeWinding, auto.
+- id: power.equipment.ratedCurrent
+  name: ratedCurrent
+  display_name: ratedCurrent
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.Breaker
+    iri: https://grid-ontology.org/psa/v0.2/equipment/Breaker
+  range:
+    type: Decimal
+    xsd: xsd:double
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: Rated continuous current in A.
+- id: power.equipment.breakingCapacity
+  name: breakingCapacity
+  display_name: breakingCapacity
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.Breaker
+    iri: https://grid-ontology.org/psa/v0.2/equipment/Breaker
+  range:
+    type: Decimal
+    xsd: xsd:double
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: Short-circuit breaking capacity in kA.
+- id: power.equipment.mechanism
+  name: mechanism
+  display_name: mechanism
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.Breaker
+    iri: https://grid-ontology.org/psa/v0.2/equipment/Breaker
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: e.g., spring, hydraulic, pneumatic.
+- id: power.equipment.isOpen
+  name: isOpen
+  display_name: isOpen
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.Breaker
+    iri: https://grid-ontology.org/psa/v0.2/equipment/Breaker
+  range:
+    type: Boolean
+    xsd: xsd:boolean
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: Current switch position.
+- id: power.equipment.length
+  name: length
+  display_name: length
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.Line
+    iri: https://grid-ontology.org/psa/v0.2/equipment/Line
+  range:
+    type: Decimal
+    xsd: xsd:double
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: Line length in km.
+- id: power.equipment.conductorType
+  name: conductorType
+  display_name: conductorType
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.Line
+    iri: https://grid-ontology.org/psa/v0.2/equipment/Line
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: null
+- id: power.equipment.ratedCurrent
+  name: ratedCurrent
+  display_name: ratedCurrent
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.Line
+    iri: https://grid-ontology.org/psa/v0.2/equipment/Line
+  range:
+    type: Decimal
+    xsd: xsd:double
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: null
+- id: power.equipment.length
+  name: length
+  display_name: length
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.Cable
+    iri: https://grid-ontology.org/psa/v0.2/equipment/Cable
+  range:
+    type: Decimal
+    xsd: xsd:double
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: Cable length in km.
+- id: power.equipment.insulationType
+  name: insulationType
+  display_name: insulationType
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.Cable
+    iri: https://grid-ontology.org/psa/v0.2/equipment/Cable
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: null
+- id: power.equipment.ratedVoltage
+  name: ratedVoltage
+  display_name: ratedVoltage
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.Cable
+    iri: https://grid-ontology.org/psa/v0.2/equipment/Cable
+  range:
+    type: Decimal
+    xsd: xsd:double
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: null
+- id: power.equipment.protectionType
+  name: protectionType
+  display_name: protectionType
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.ProtectionDevice
+    iri: https://grid-ontology.org/psa/v0.2/equipment/ProtectionDevice
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: e.g., overcurrent, differential, distance.
+- id: power.equipment.settingGroup
+  name: settingGroup
+  display_name: settingGroup
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.ProtectionDevice
+    iri: https://grid-ontology.org/psa/v0.2/equipment/ProtectionDevice
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: null
+- id: power.equipment.relayModel
+  name: relayModel
+  display_name: relayModel
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.ProtectionDevice
+    iri: https://grid-ontology.org/psa/v0.2/equipment/ProtectionDevice
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: null
+- id: power.equipment.meterId
+  name: meterId
+  display_name: meterId
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.Meter
+    iri: https://grid-ontology.org/psa/v0.2/equipment/Meter
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: true
+  multiplicity: 0..1
+  description: null
+- id: power.equipment.meterType
+  name: meterType
+  display_name: meterType
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.Meter
+    iri: https://grid-ontology.org/psa/v0.2/equipment/Meter
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: e.g., energy, power quality, demand.
+- id: power.equipment.communicationProtocol
+  name: communicationProtocol
+  display_name: communicationProtocol
+  primitive: Attribute
+  domain:
+    entity_id: power.equipment.Meter
+    iri: https://grid-ontology.org/psa/v0.2/equipment/Meter
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: null

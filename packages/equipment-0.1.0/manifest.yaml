@@ -1,15 +1,14 @@
 package:
-  id: power.equipment.transformer
-  name: TransformerPackage
+  id: power.equipment
+  name: GridEquipment
   version: 0.1.0
   producer: grid-ontology
-  source_ir: https://grid-ontology.org/psa/v0.2/transformer
+  source_ir: https://grid-ontology.org/psa/v0.2/equipment
   compatibility:
     psa: '>=0.1'
   status: draft
   maturity: reference
-  generated_at: '2026-07-20T08:02:29.703997Z'
+  generated_at: '2026-07-20T08:02:29.678560Z'
   generator: cim-ontology 1.7.0
   dependencies:
-  - power.equipment
   - power.grid.core

@@ -1,0 +1,379 @@
+attributes:
+- id: power.grid.core.assetId
+  name: assetId
+  display_name: assetId
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Asset
+    iri: https://grid-ontology.org/psa/v0.2/core/Asset
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: true
+  multiplicity: 0..1
+  description: Unique asset identifier.
+- id: power.grid.core.name
+  name: name
+  display_name: name
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Asset
+    iri: https://grid-ontology.org/psa/v0.2/core/Asset
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: Human-readable name.
+- id: power.grid.core.status
+  name: status
+  display_name: status
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Asset
+    iri: https://grid-ontology.org/psa/v0.2/core/Asset
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: Lifecycle status, e.g., inService, retired.
+- id: power.grid.core.locationId
+  name: locationId
+  display_name: locationId
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Location
+    iri: https://grid-ontology.org/psa/v0.2/core/Location
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: true
+  multiplicity: 0..1
+  description: null
+- id: power.grid.core.name
+  name: name
+  display_name: name
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Location
+    iri: https://grid-ontology.org/psa/v0.2/core/Location
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: null
+- id: power.grid.core.geoCoordinates
+  name: geoCoordinates
+  display_name: geoCoordinates
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Location
+    iri: https://grid-ontology.org/psa/v0.2/core/Location
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: Latitude/longitude or coordinate reference.
+- id: power.grid.core.organizationId
+  name: organizationId
+  display_name: organizationId
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Organization
+    iri: https://grid-ontology.org/psa/v0.2/core/Organization
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: true
+  multiplicity: 0..1
+  description: null
+- id: power.grid.core.name
+  name: name
+  display_name: name
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Organization
+    iri: https://grid-ontology.org/psa/v0.2/core/Organization
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: true
+  multiplicity: 0..1
+  description: null
+- id: power.grid.core.role
+  name: role
+  display_name: role
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Organization
+    iri: https://grid-ontology.org/psa/v0.2/core/Organization
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: Role in the grid ecosystem, e.g., operator, maintainer.
+- id: power.grid.core.equipmentId
+  name: equipmentId
+  display_name: equipmentId
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Equipment
+    iri: https://grid-ontology.org/psa/v0.2/core/Equipment
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: true
+  multiplicity: 0..1
+  description: null
+- id: power.grid.core.name
+  name: name
+  display_name: name
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Equipment
+    iri: https://grid-ontology.org/psa/v0.2/core/Equipment
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: null
+- id: power.grid.core.operatingStatus
+  name: operatingStatus
+  display_name: operatingStatus
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Equipment
+    iri: https://grid-ontology.org/psa/v0.2/core/Equipment
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: Operational state, e.g., inService, outOfService.
+- id: power.grid.core.commissioningDate
+  name: commissioningDate
+  display_name: commissioningDate
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Equipment
+    iri: https://grid-ontology.org/psa/v0.2/core/Equipment
+  range:
+    type: Date
+    xsd: xsd:date
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: null
+- id: power.grid.core.measurementId
+  name: measurementId
+  display_name: measurementId
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Measurement
+    iri: https://grid-ontology.org/psa/v0.2/core/Measurement
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: true
+  multiplicity: 0..1
+  description: null
+- id: power.grid.core.measurementType
+  name: measurementType
+  display_name: measurementType
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Measurement
+    iri: https://grid-ontology.org/psa/v0.2/core/Measurement
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: e.g., voltage, current, temperature.
+- id: power.grid.core.unit
+  name: unit
+  display_name: unit
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Measurement
+    iri: https://grid-ontology.org/psa/v0.2/core/Measurement
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: null
+- id: power.grid.core.value
+  name: value
+  display_name: value
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Measurement
+    iri: https://grid-ontology.org/psa/v0.2/core/Measurement
+  range:
+    type: Decimal
+    xsd: xsd:double
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: null
+- id: power.grid.core.timestamp
+  name: timestamp
+  display_name: timestamp
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Measurement
+    iri: https://grid-ontology.org/psa/v0.2/core/Measurement
+  range:
+    type: DateTime
+    xsd: xsd:dateTime
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: null
+- id: power.grid.core.workId
+  name: workId
+  display_name: workId
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Work
+    iri: https://grid-ontology.org/psa/v0.2/core/Work
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: true
+  multiplicity: 0..1
+  description: null
+- id: power.grid.core.workType
+  name: workType
+  display_name: workType
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Work
+    iri: https://grid-ontology.org/psa/v0.2/core/Work
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: e.g., inspection, maintenance, repair.
+- id: power.grid.core.plannedStart
+  name: plannedStart
+  display_name: plannedStart
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Work
+    iri: https://grid-ontology.org/psa/v0.2/core/Work
+  range:
+    type: DateTime
+    xsd: xsd:dateTime
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: null
+- id: power.grid.core.plannedEnd
+  name: plannedEnd
+  display_name: plannedEnd
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Work
+    iri: https://grid-ontology.org/psa/v0.2/core/Work
+  range:
+    type: DateTime
+    xsd: xsd:dateTime
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: null
+- id: power.grid.core.status
+  name: status
+  display_name: status
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Work
+    iri: https://grid-ontology.org/psa/v0.2/core/Work
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: null
+- id: power.grid.core.eventId
+  name: eventId
+  display_name: eventId
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Event
+    iri: https://grid-ontology.org/psa/v0.2/core/Event
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: true
+  multiplicity: 0..1
+  description: null
+- id: power.grid.core.eventType
+  name: eventType
+  display_name: eventType
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Event
+    iri: https://grid-ontology.org/psa/v0.2/core/Event
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: e.g., fault, alarm, switching.
+- id: power.grid.core.occurredAt
+  name: occurredAt
+  display_name: occurredAt
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Event
+    iri: https://grid-ontology.org/psa/v0.2/core/Event
+  range:
+    type: DateTime
+    xsd: xsd:dateTime
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: null
+- id: power.grid.core.severity
+  name: severity
+  display_name: severity
+  primitive: Attribute
+  domain:
+    entity_id: power.grid.core.Event
+    iri: https://grid-ontology.org/psa/v0.2/core/Event
+  range:
+    type: String
+    xsd: xsd:string
+    unit: null
+  required: false
+  multiplicity: 0..1
+  description: null

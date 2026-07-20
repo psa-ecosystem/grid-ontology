@@ -1,0 +1,203 @@
+@prefix psa: <https://grid-ontology.org/psa/v0.2/core/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+psa:AssetShape a sh:NodeShape ;
+    rdfs:label "Asset shape"@en ;
+    sh:property psa:Asset.assetIdShape,
+        psa:Asset.nameShape,
+        psa:Asset.statusShape ;
+    sh:targetClass psa:Asset .
+
+psa:EquipmentShape a sh:NodeShape ;
+    rdfs:label "Equipment shape"@en ;
+    sh:property psa:Equipment.commissioningDateShape,
+        psa:Equipment.equipmentIdShape,
+        psa:Equipment.nameShape,
+        psa:Equipment.operatingStatusShape ;
+    sh:targetClass psa:Equipment .
+
+psa:EventShape a sh:NodeShape ;
+    rdfs:label "Event shape"@en ;
+    sh:property psa:Event.eventIdShape,
+        psa:Event.eventTypeShape,
+        psa:Event.occurredAtShape,
+        psa:Event.severityShape ;
+    sh:targetClass psa:Event .
+
+psa:LocationShape a sh:NodeShape ;
+    rdfs:label "Location shape"@en ;
+    sh:property psa:Location.geoCoordinatesShape,
+        psa:Location.locationIdShape,
+        psa:Location.nameShape ;
+    sh:targetClass psa:Location .
+
+psa:MeasurementShape a sh:NodeShape ;
+    rdfs:label "Measurement shape"@en ;
+    sh:property psa:Measurement.measurementIdShape,
+        psa:Measurement.measurementTypeShape,
+        psa:Measurement.timestampShape,
+        psa:Measurement.unitShape,
+        psa:Measurement.valueShape ;
+    sh:targetClass psa:Measurement .
+
+psa:OrganizationShape a sh:NodeShape ;
+    rdfs:label "Organization shape"@en ;
+    sh:property psa:Organization.nameShape,
+        psa:Organization.organizationIdShape,
+        psa:Organization.roleShape ;
+    sh:targetClass psa:Organization .
+
+psa:WorkShape a sh:NodeShape ;
+    rdfs:label "Work shape"@en ;
+    sh:property psa:Work.plannedEndShape,
+        psa:Work.plannedStartShape,
+        psa:Work.statusShape,
+        psa:Work.workIdShape,
+        psa:Work.workTypeShape ;
+    sh:targetClass psa:Work .
+
+psa:Asset.assetIdShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path psa:Asset.assetId .
+
+psa:Asset.nameShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path psa:Asset.name .
+
+psa:Asset.statusShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path psa:Asset.status .
+
+psa:Equipment.commissioningDateShape a sh:PropertyShape ;
+    sh:datatype xsd:date ;
+    sh:maxCount 1 ;
+    sh:path psa:Equipment.commissioningDate .
+
+psa:Equipment.equipmentIdShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path psa:Equipment.equipmentId .
+
+psa:Equipment.nameShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path psa:Equipment.name .
+
+psa:Equipment.operatingStatusShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path psa:Equipment.operatingStatus .
+
+psa:Event.eventIdShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path psa:Event.eventId .
+
+psa:Event.eventTypeShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path psa:Event.eventType .
+
+psa:Event.occurredAtShape a sh:PropertyShape ;
+    sh:datatype xsd:dateTime ;
+    sh:maxCount 1 ;
+    sh:path psa:Event.occurredAt .
+
+psa:Event.severityShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path psa:Event.severity .
+
+psa:Location.geoCoordinatesShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path psa:Location.geoCoordinates .
+
+psa:Location.locationIdShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path psa:Location.locationId .
+
+psa:Location.nameShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path psa:Location.name .
+
+psa:Measurement.measurementIdShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path psa:Measurement.measurementId .
+
+psa:Measurement.measurementTypeShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path psa:Measurement.measurementType .
+
+psa:Measurement.timestampShape a sh:PropertyShape ;
+    sh:datatype xsd:dateTime ;
+    sh:maxCount 1 ;
+    sh:path psa:Measurement.timestamp .
+
+psa:Measurement.unitShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path psa:Measurement.unit .
+
+psa:Measurement.valueShape a sh:PropertyShape ;
+    sh:datatype xsd:double ;
+    sh:maxCount 1 ;
+    sh:path psa:Measurement.value .
+
+psa:Organization.nameShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path psa:Organization.name .
+
+psa:Organization.organizationIdShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path psa:Organization.organizationId .
+
+psa:Organization.roleShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path psa:Organization.role .
+
+psa:Work.plannedEndShape a sh:PropertyShape ;
+    sh:datatype xsd:dateTime ;
+    sh:maxCount 1 ;
+    sh:path psa:Work.plannedEnd .
+
+psa:Work.plannedStartShape a sh:PropertyShape ;
+    sh:datatype xsd:dateTime ;
+    sh:maxCount 1 ;
+    sh:path psa:Work.plannedStart .
+
+psa:Work.statusShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path psa:Work.status .
+
+psa:Work.workIdShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path psa:Work.workId .
+
+psa:Work.workTypeShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path psa:Work.workType .
+

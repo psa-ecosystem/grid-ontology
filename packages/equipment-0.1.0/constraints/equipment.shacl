@@ -1,0 +1,176 @@
+@prefix psa: <https://grid-ontology.org/psa/v0.2/equipment/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+psa:BreakerShape a sh:NodeShape ;
+    rdfs:label "Breaker shape"@en ;
+    sh:property psa:Breaker.breakingCapacityShape,
+        psa:Breaker.isOpenShape,
+        psa:Breaker.mechanismShape,
+        psa:Breaker.ratedCurrentShape ;
+    sh:targetClass psa:Breaker .
+
+psa:CableShape a sh:NodeShape ;
+    rdfs:label "Cable shape"@en ;
+    sh:property psa:Cable.insulationTypeShape,
+        psa:Cable.lengthShape,
+        psa:Cable.ratedVoltageShape ;
+    sh:targetClass psa:Cable .
+
+psa:LineShape a sh:NodeShape ;
+    rdfs:label "Line shape"@en ;
+    sh:property psa:Line.conductorTypeShape,
+        psa:Line.lengthShape,
+        psa:Line.ratedCurrentShape ;
+    sh:targetClass psa:Line .
+
+psa:MeterShape a sh:NodeShape ;
+    rdfs:label "Meter shape"@en ;
+    sh:property psa:Meter.communicationProtocolShape,
+        psa:Meter.measuresShape,
+        psa:Meter.meterIdShape,
+        psa:Meter.meterTypeShape ;
+    sh:targetClass psa:Meter .
+
+psa:ProtectionDeviceShape a sh:NodeShape ;
+    rdfs:label "ProtectionDevice shape"@en ;
+    sh:property psa:ProtectionDevice.protectionTypeShape,
+        psa:ProtectionDevice.relayModelShape,
+        psa:ProtectionDevice.settingGroupShape ;
+    sh:targetClass psa:ProtectionDevice .
+
+psa:TransformerShape a sh:NodeShape ;
+    rdfs:label "Transformer shape"@en ;
+    sh:property psa:Transformer.installedInShape,
+        psa:Transformer.manufacturerShape,
+        psa:Transformer.operatedByShape,
+        psa:Transformer.primaryVoltageShape,
+        psa:Transformer.ratedCapacityShape,
+        psa:Transformer.secondaryVoltageShape,
+        psa:Transformer.windingTypeShape ;
+    sh:targetClass psa:Transformer .
+
+psa:Breaker.breakingCapacityShape a sh:PropertyShape ;
+    sh:datatype xsd:double ;
+    sh:maxCount 1 ;
+    sh:path psa:Breaker.breakingCapacity .
+
+psa:Breaker.isOpenShape a sh:PropertyShape ;
+    sh:datatype xsd:boolean ;
+    sh:maxCount 1 ;
+    sh:path psa:Breaker.isOpen .
+
+psa:Breaker.mechanismShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path psa:Breaker.mechanism .
+
+psa:Breaker.ratedCurrentShape a sh:PropertyShape ;
+    sh:datatype xsd:double ;
+    sh:maxCount 1 ;
+    sh:path psa:Breaker.ratedCurrent .
+
+psa:Cable.insulationTypeShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path psa:Cable.insulationType .
+
+psa:Cable.lengthShape a sh:PropertyShape ;
+    sh:datatype xsd:double ;
+    sh:maxCount 1 ;
+    sh:path psa:Cable.length .
+
+psa:Cable.ratedVoltageShape a sh:PropertyShape ;
+    sh:datatype xsd:double ;
+    sh:maxCount 1 ;
+    sh:path psa:Cable.ratedVoltage .
+
+psa:Line.conductorTypeShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path psa:Line.conductorType .
+
+psa:Line.lengthShape a sh:PropertyShape ;
+    sh:datatype xsd:double ;
+    sh:maxCount 1 ;
+    sh:path psa:Line.length .
+
+psa:Line.ratedCurrentShape a sh:PropertyShape ;
+    sh:datatype xsd:double ;
+    sh:maxCount 1 ;
+    sh:path psa:Line.ratedCurrent .
+
+psa:Meter.communicationProtocolShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path psa:Meter.communicationProtocol .
+
+psa:Meter.measuresShape a sh:PropertyShape ;
+    sh:class_ <https://grid-ontology.org/psa/v0.2/core/Measurement> ;
+    sh:minCount 0 ;
+    sh:path psa:Meter.measures .
+
+psa:Meter.meterIdShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path psa:Meter.meterId .
+
+psa:Meter.meterTypeShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path psa:Meter.meterType .
+
+psa:ProtectionDevice.protectionTypeShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path psa:ProtectionDevice.protectionType .
+
+psa:ProtectionDevice.relayModelShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path psa:ProtectionDevice.relayModel .
+
+psa:ProtectionDevice.settingGroupShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path psa:ProtectionDevice.settingGroup .
+
+psa:Transformer.installedInShape a sh:PropertyShape ;
+    sh:class_ <https://grid-ontology.org/psa/v0.2/core/Location> ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:path psa:Transformer.installedIn .
+
+psa:Transformer.manufacturerShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path psa:Transformer.manufacturer .
+
+psa:Transformer.operatedByShape a sh:PropertyShape ;
+    sh:class_ <https://grid-ontology.org/psa/v0.2/core/Organization> ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:path psa:Transformer.operatedBy .
+
+psa:Transformer.primaryVoltageShape a sh:PropertyShape ;
+    sh:datatype xsd:double ;
+    sh:maxCount 1 ;
+    sh:path psa:Transformer.primaryVoltage .
+
+psa:Transformer.ratedCapacityShape a sh:PropertyShape ;
+    sh:datatype xsd:double ;
+    sh:maxCount 1 ;
+    sh:path psa:Transformer.ratedCapacity .
+
+psa:Transformer.secondaryVoltageShape a sh:PropertyShape ;
+    sh:datatype xsd:double ;
+    sh:maxCount 1 ;
+    sh:path psa:Transformer.secondaryVoltage .
+
+psa:Transformer.windingTypeShape a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path psa:Transformer.windingType .
+

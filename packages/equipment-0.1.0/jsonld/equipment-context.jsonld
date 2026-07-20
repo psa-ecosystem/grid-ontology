@@ -1,0 +1,100 @@
+{
+  "@context": {
+    "@vocab": "https://grid-ontology.org/psa/v0.2/equipment/",
+    "id": "@id",
+    "type": "@type",
+    "Transformer": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/Transformer",
+      "@type": "@id"
+    },
+    "ratedCapacity": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/Transformer.ratedCapacity"
+    },
+    "primaryVoltage": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/Transformer.primaryVoltage"
+    },
+    "secondaryVoltage": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/Transformer.secondaryVoltage"
+    },
+    "manufacturer": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/Transformer.manufacturer"
+    },
+    "windingType": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/Transformer.windingType"
+    },
+    "installedIn": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/Transformer.installedIn",
+      "@type": "@id"
+    },
+    "operatedBy": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/Transformer.operatedBy",
+      "@type": "@id"
+    },
+    "Breaker": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/Breaker",
+      "@type": "@id"
+    },
+    "ratedCurrent": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/Line.ratedCurrent"
+    },
+    "breakingCapacity": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/Breaker.breakingCapacity"
+    },
+    "mechanism": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/Breaker.mechanism"
+    },
+    "isOpen": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/Breaker.isOpen"
+    },
+    "Line": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/Line",
+      "@type": "@id"
+    },
+    "length": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/Cable.length"
+    },
+    "conductorType": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/Line.conductorType"
+    },
+    "Cable": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/Cable",
+      "@type": "@id"
+    },
+    "insulationType": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/Cable.insulationType"
+    },
+    "ratedVoltage": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/Cable.ratedVoltage"
+    },
+    "ProtectionDevice": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/ProtectionDevice",
+      "@type": "@id"
+    },
+    "protectionType": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/ProtectionDevice.protectionType"
+    },
+    "settingGroup": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/ProtectionDevice.settingGroup"
+    },
+    "relayModel": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/ProtectionDevice.relayModel"
+    },
+    "Meter": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/Meter",
+      "@type": "@id"
+    },
+    "meterId": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/Meter.meterId"
+    },
+    "meterType": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/Meter.meterType"
+    },
+    "communicationProtocol": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/Meter.communicationProtocol"
+    },
+    "measures": {
+      "@id": "https://grid-ontology.org/psa/v0.2/equipment/Meter.measures",
+      "@type": "@id"
+    }
+  }
+}

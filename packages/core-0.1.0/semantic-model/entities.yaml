@@ -1,0 +1,71 @@
+entities:
+- id: power.grid.core.Asset
+  name: Asset
+  display_name: Asset
+  primitive: Entity
+  namespace: https://grid-ontology.org/psa/v0.2/core/
+  iri: https://grid-ontology.org/psa/v0.2/core/Asset
+  description: A physical or logical resource that is owned or managed by a grid operator.
+  parents: []
+  package_id: power.grid.core
+  source_refs: []
+- id: power.grid.core.Location
+  name: Location
+  display_name: Location
+  primitive: Entity
+  namespace: https://grid-ontology.org/psa/v0.2/core/
+  iri: https://grid-ontology.org/psa/v0.2/core/Location
+  description: A geographical or topological place where assets are installed.
+  parents: []
+  package_id: power.grid.core
+  source_refs: []
+- id: power.grid.core.Organization
+  name: Organization
+  display_name: Organization
+  primitive: Entity
+  namespace: https://grid-ontology.org/psa/v0.2/core/
+  iri: https://grid-ontology.org/psa/v0.2/core/Organization
+  description: A company, department, or organizational unit involved in grid operations.
+  parents: []
+  package_id: power.grid.core
+  source_refs: []
+- id: power.grid.core.Equipment
+  name: Equipment
+  display_name: Equipment
+  primitive: Entity
+  namespace: https://grid-ontology.org/psa/v0.2/core/
+  iri: https://grid-ontology.org/psa/v0.2/core/Equipment
+  description: A grid asset that performs an electrical or support function.
+  parents: []
+  package_id: power.grid.core
+  source_refs: []
+- id: power.grid.core.Measurement
+  name: Measurement
+  display_name: Measurement
+  primitive: Entity
+  namespace: https://grid-ontology.org/psa/v0.2/core/
+  iri: https://grid-ontology.org/psa/v0.2/core/Measurement
+  description: A quantified observation of a physical or logical quantity.
+  parents: []
+  package_id: power.grid.core
+  source_refs: []
+- id: power.grid.core.Work
+  name: Work
+  display_name: Work
+  primitive: Entity
+  namespace: https://grid-ontology.org/psa/v0.2/core/
+  iri: https://grid-ontology.org/psa/v0.2/core/Work
+  description: A task, activity, or work order performed on grid assets.
+  parents: []
+  package_id: power.grid.core
+  source_refs: []
+- id: power.grid.core.Event
+  name: Event
+  display_name: Event
+  primitive: Entity
+  namespace: https://grid-ontology.org/psa/v0.2/core/
+  iri: https://grid-ontology.org/psa/v0.2/core/Event
+  description: An occurrence of significance to grid operations.
+  parents: []
+  package_id: power.grid.core
+  source_refs: []
